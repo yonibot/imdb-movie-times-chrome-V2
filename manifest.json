@@ -1,11 +1,11 @@
 {
   "manifest_version": 2,
   "name": "Instant Ratings for Google Movies™",
-  "version": "0.1",
+  "version": "2.0",
   "icons": {
     "128": "icon_128.png"
   },
-  "description": "This extension adds IMDB ratings to Google Movies movie listings.",
+  "description": "This extension adds extra movie information to Google movie listings, including rating, plot, year and genre.",
   "permissions": [
     "<all_urls>","webRequest"
   ],
@@ -13,8 +13,10 @@
     "scripts": ["background.js"]
   },
   "content_scripts": [{
-    "matches": [
-      "*://google.co*"
+    "matches": ["http://*/*", "https://*/*"],
+    "include_globs": [
+      "http://www.google.*/*", 
+      "https://www.google.*/*"
     ],
     "js": ["jquery-3.1.1.min.js", "content.js"]
   }]
