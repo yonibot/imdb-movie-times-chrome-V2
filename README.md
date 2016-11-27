@@ -1,4 +1,4 @@
-# Google Movie Times Ratings
+# Inline Movie Info for Google Movies
 
 A [Chrome extension](https://chrome.google.com/webstore/detail/instant-ratings-for-googl/ifbobeipgdgloiodkloakjehkjgpiphb) that adds movie info to showtimes displayed by Google search results, including IMDB rating, plot, year, and genre.
 
